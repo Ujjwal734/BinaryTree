@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using BinaryTree;
+Console.WriteLine("Hello, Welcome to Binary search Tree Logic...!");
+BinaryTrees Binarytrees = new BinaryTrees();
+Console.WriteLine("Enter a Three Node Element...! ");
+int ele1 = Convert.ToInt32(Console.ReadLine());
+int ele2 = Convert.ToInt32(Console.ReadLine());
+int ele3 = Convert.ToInt32(Console.ReadLine());
+Binarytrees.Add(ele1);
+Binarytrees.Add(ele2);
+Binarytrees.Add(ele3);
+Binarytrees.Display();
