@@ -9,3 +9,5 @@ Binarytrees.Add(ele1);
 Binarytrees.Add(ele2);
 Binarytrees.Add(ele3);
 Binarytrees.Display();
+Console.WriteLine("****************************");
+Binarytrees.Search(63,Binarytrees);

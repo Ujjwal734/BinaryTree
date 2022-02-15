@@ -55,6 +55,24 @@ namespace BinaryTree
         {
             Display(_root);
         }
-        
+        public void Search(int element, BinaryTrees node)
+        {
+            
+            if (element == null)
+            {
+                Console.WriteLine("Tree is Empty...! ");
+            }
+            if (node._root.Equals(element))
+            {
+                Console.WriteLine("\nFound the element in BST" + " " + node._root);
+            }
+            else
+                Console.WriteLine("\nCurrent element is {0} in BST", node._root);
+            
+            if (element.CompareTo(node._root) < 0)
+                Search(element, node.Left);
+            if (element.CompareTo(node._root) > 0)
+                Search(element, node.Right);
+        }
     }
 }
